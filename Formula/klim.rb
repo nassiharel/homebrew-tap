@@ -11,7 +11,7 @@ class Klim < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/nassiharel/klim/releases/download/v0.1.2/klim_0.1.2_darwin_amd64.tar.gz"
-      sha256 "763ff740ab76f1b8a45d83e6fcc112f2ff254e271f0cb67f5ca414d349c8a63b"
+      sha256 "2105de65e4545c2ac94370c5b323a6ab916637ca7e9b21d6fa10903dfef305f3"
 
       define_method(:install) do
         bin.install "klim"
@@ -19,7 +19,7 @@ class Klim < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/nassiharel/klim/releases/download/v0.1.2/klim_0.1.2_darwin_arm64.tar.gz"
-      sha256 "d0a69cd4d81f14721c50525a716e367876318eb5d2f45eb6ea316e2d1f55735f"
+      sha256 "2393c6d7b231e26504c55eb4f41663a809f7b3b927a8d781444344f2c5709289"
 
       define_method(:install) do
         bin.install "klim"
@@ -30,14 +30,14 @@ class Klim < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/nassiharel/klim/releases/download/v0.1.2/klim_0.1.2_linux_amd64.tar.gz"
-      sha256 "8b7950c465b7b07d8cc9c10b18c3e8b57e456465e2f008c9bb458da3a0654454"
+      sha256 "d82d32f1c27e0e5ef7b1d7269129b26aa911fade065ec37cb42012c0afc7f717"
       define_method(:install) do
         bin.install "klim"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/nassiharel/klim/releases/download/v0.1.2/klim_0.1.2_linux_arm64.tar.gz"
-      sha256 "3de8ebfd1f21293f0bf5fa0075069c531a4c304af6e6f5fcfb2819b018e9413f"
+      sha256 "0e712d183b4876f9cba3e50abfb7c18f44e725d34feb176704c43a3c72c43659"
       define_method(:install) do
         bin.install "klim"
       end
