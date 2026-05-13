@@ -5,21 +5,21 @@
 class Klim < Formula
   desc "Productivity booster for dev tools — discover, standardise, automate, audit toolchains."
   homepage "https://github.com/nassiharel/klim"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nassiharel/klim/releases/download/v0.1.2/klim_0.1.2_darwin_amd64.tar.gz"
-      sha256 "0663cadccfbc972677e19a5c000bb3fb10de07658a9996422a4ecda04bf3671c"
+      url "https://github.com/nassiharel/klim/releases/download/v0.1.3/klim_0.1.3_darwin_amd64.tar.gz"
+      sha256 "894d6f731123e0188659736f852da082f013e5fbfec6dde05b55dfeb67ad494f"
 
       define_method(:install) do
         bin.install "klim"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nassiharel/klim/releases/download/v0.1.2/klim_0.1.2_darwin_arm64.tar.gz"
-      sha256 "9331d6cc0269439502ffe4792a4e9b8d79c892c565178f9acbe8429a9184ca9f"
+      url "https://github.com/nassiharel/klim/releases/download/v0.1.3/klim_0.1.3_darwin_arm64.tar.gz"
+      sha256 "1964be7317310ff9282a3c16e14858e0dfb9a59fc4dd06b42737e36411587a52"
 
       define_method(:install) do
         bin.install "klim"
@@ -29,15 +29,15 @@ class Klim < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nassiharel/klim/releases/download/v0.1.2/klim_0.1.2_linux_amd64.tar.gz"
-      sha256 "d5b9191281d5230f15df21fdb70222a2ff54b1236e728580840743199c2f8786"
+      url "https://github.com/nassiharel/klim/releases/download/v0.1.3/klim_0.1.3_linux_amd64.tar.gz"
+      sha256 "bc6f483ba47b8860527bdbddff21c5b94a27428ecb81fc48ef2649c15990b5cd"
       define_method(:install) do
         bin.install "klim"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nassiharel/klim/releases/download/v0.1.2/klim_0.1.2_linux_arm64.tar.gz"
-      sha256 "4c9287329c79db1991be4f1f1614387d9dd9f4780b14d1e1497a1afeaefdb005"
+      url "https://github.com/nassiharel/klim/releases/download/v0.1.3/klim_0.1.3_linux_arm64.tar.gz"
+      sha256 "ca6c474070578f7d25e71354f291d73786d18fdb3d2c826177e71feacfa3a62d"
       define_method(:install) do
         bin.install "klim"
       end
