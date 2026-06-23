@@ -4,22 +4,22 @@ cask "klim" do
 
   on_macos do
     on_intel do
-      sha256 "e87b5e740c5b5b8cd7babc463b04b2657e40ad579b7d67357a978df784763dfe"
+      sha256 "ec51393ace994cc130ddfc6ca87fda6b58ef852191cc5fd1182d20337a0f3ad0"
       url "https://github.com/nassiharel/klim/releases/download/v#{version}/klim_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "c000cdbb8a42eb571b524a14524d1c294a8019152b3a85f080fdb039d667aa26"
+      sha256 "1e51391588b3ac9dac513d0940eb1e174505e58782fed675e37d02c30953d0bf"
       url "https://github.com/nassiharel/klim/releases/download/v#{version}/klim_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "b306be88168c306c203710fb876b2964e1cde86cf19af130e50db04cb1d9848e"
+      sha256 "75281f68ead8b9b14946370cd365219b379a8ea7e29a795ff702f02a489400ea"
       url "https://github.com/nassiharel/klim/releases/download/v#{version}/klim_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "637d71b58d3847383d5b7d1e3f0595e83c6be3093c5ef5f1bafac3a77825b0c4"
+      sha256 "93749dbcfd167a052d353d01a0465cb7b5019cce43d95f0c5689bdb0674f75bd"
       url "https://github.com/nassiharel/klim/releases/download/v#{version}/klim_#{version}_linux_arm64.tar.gz"
     end
   end
